@@ -4,7 +4,7 @@ import { HeroThree } from "../heroThree/HeroThree";
 import { HeroTow } from "../heroTow/HeroTow";
 
 export const ThumbnailDownloader = () => {
-  const [imageUrl, setImageUrl] = useState("");
+  const [imageId, setImageId] = useState("");
 
   const handelVideoUrlChange = (videoUrl) => {
     console.log(videoUrl);
@@ -16,16 +16,16 @@ export const ThumbnailDownloader = () => {
       const videoId =
         videoUrl.split("v=")[1] || videoUrl.split("/").slice(-1)[0];
       // Change the thumbnail image URL
-      setImageUrl(`https://img.youtube.com/vi/${videoId}/sddefault.jpg`);
+      setImageId(videoId);
     } else {
-      setImageUrl("");
+      setImageId("");
     }
   };
 
   return (
     <div>
       <HeroThree handelVideoUrlChange={handelVideoUrlChange} />
-      <HeroTow imageUrl={imageUrl} />
+      <HeroTow imageId={imageId} />
     </div>
   );
 };

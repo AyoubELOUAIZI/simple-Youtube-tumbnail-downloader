@@ -1,26 +1,23 @@
-"use client"
-import React, { useState } from 'react'
+"use client";
+import React, { useState } from "react";
 
 export const Navbar = () => {
-    // const button = document.querySelector('#menu-button');
-    // const menu = document.querySelector('#menu');
-    
-    
-    // button.addEventListener('click', () => {
-    //   menu.classList.toggle('hidden');
-    // });
-    
+  // const button = document.querySelector('#menu-button');
+  // const menu = document.querySelector('#menu');
 
-    const [isMenuHidden, setMenuHidden] = useState(true);
+  // button.addEventListener('click', () => {
+  //   menu.classList.toggle('hidden');
+  // });
 
-    const toggleMenu = () => {
-      setMenuHidden(!isMenuHidden);
-    };
- 
+  const [isMenuHidden, setMenuHidden] = useState(true);
+
+  const toggleMenu = () => {
+    setMenuHidden(!isMenuHidden);
+  };
 
   return (
-  <header >
-     <nav
+    <header>
+      <nav
         class="
           flex flex-wrap
           items-center
@@ -31,35 +28,35 @@ export const Navbar = () => {
           px-4
           text-lg text-gray-700
           bg-red-200
+          fixed
+          z-40
          
         "
       >
-       <div>
-          <a href="#">
-           MYSite
-          </a>
+        <div>
+          <a href="#">MYSite</a>
         </div>
-       
-         <svg
-           onClick={toggleMenu}
-            xmlns="http://www.w3.org/2000/svg"
-            id="menu-button"
-            class="h-6 w-6 cursor-pointer md:hidden block"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-       
-          <div
+
+        <svg
+          onClick={toggleMenu}
+          xmlns="http://www.w3.org/2000/svg"
+          id="menu-button"
+          class="h-6 w-6 cursor-pointer md:hidden block"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+
+        <div
           className={`w-full md:flex md:items-center md:w-auto ${
-            isMenuHidden ? 'hidden' : ''
+            isMenuHidden ? "hidden" : ""
           }`}
           id="menu"
         >
@@ -72,35 +69,36 @@ export const Navbar = () => {
               md:pt-0"
           >
             <li>
-              <a class="md:p-4 py-2 block hover:text-purple-400" href="#"
-                >Features</a
-              >
+              <a class="md:p-4 py-2 block hover:text-purple-400" href="#">
+                Features
+              </a>
             </li>
             <li>
-              <a class="md:p-4 py-2 block hover:text-purple-400" href="#"
-                >Pricing</a
-              >
+              <a class="md:p-4 py-2 block hover:text-purple-400" href="#">
+                Pricing
+              </a>
             </li>
             <li>
-              <a class="md:p-4 py-2 block hover:text-purple-400" href="#"
-                >Customers</a
-              >
+              <a class="md:p-4 py-2 block hover:text-purple-400" href="#">
+                Customers
+              </a>
             </li>
             <li>
-              <a class="md:p-4 py-2 block hover:text-purple-400" href="#"
-                >Blog</a
-              >
+              <a class="md:p-4 py-2 block hover:text-purple-400" href="#">
+                Blog
+              </a>
             </li>
             <li>
               <a
                 class="md:p-4 py-2 block hover:text-purple-400 text-purple-500"
                 href="#"
-                >Sign Up</a
               >
+                Sign Up
+              </a>
             </li>
           </ul>
         </div>
-    </nav>
-  </header>
-  )
-}
+      </nav>
+    </header>
+  );
+};

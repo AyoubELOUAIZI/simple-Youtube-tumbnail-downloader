@@ -1,7 +1,7 @@
 import React from "react";
 
-export const HeroTow = ({ imageUrl }) => {
-  console.log("imageUrl", imageUrl);
+export const HeroTow = ({ imageId }) => {
+  console.log("imageId", imageId);
   return (
     <div>
       <section class="text-gray-600 body-font">
@@ -20,10 +20,10 @@ export const HeroTow = ({ imageUrl }) => {
             </p>
             <div class="flex justify-center">
               <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                Button
+                Download
               </button>
               <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                Button
+                Open
               </button>
               <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
                 Button
@@ -34,7 +34,11 @@ export const HeroTow = ({ imageUrl }) => {
             <img
               class="object-cover object-center rounded"
               alt="thumbnail"
-              src={imageUrl ? imageUrl : "https://dummyimage.com/720x600"}
+              src={
+                imageId
+                  ? `https://img.youtube.com/vi/${imageId}/sddefault.jpg`
+                  : "https://dummyimage.com/720x600"
+              }
             />
           </div>
         </div>

@@ -88,14 +88,6 @@ export const Navbar = () => {
                 Blog
               </a>
             </li>
-            <li>
-              <a
-                class="md:p-4 py-2 block hover:text-purple-400 text-purple-500"
-                href="#"
-              >
-                Sign Up
-              </a>
-            </li>
           </ul>
         </div>
       </nav>

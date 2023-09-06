@@ -1,14 +1,12 @@
 import { ThumbnailDownloader } from '@/components/ThumbnailDownloader/ThumbnailDownloader'
-import { HeroOne } from '@/components/heroOne/HeroOne'
-// import { HeroThree } from '@/components/heroThree/HeroThree'
-// import { HeroTow } from '@/components/heroTow/HeroTow'
+import { HeroFour } from '@/components/heroFour/HeroFour'
 // import Image from 'next/image'
 
 export default function Home() {
   return (
    <div>
    <ThumbnailDownloader/>
-    <HeroOne/>
+    <HeroFour/>
    </div>
   )
 }

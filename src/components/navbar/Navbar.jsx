@@ -27,14 +27,14 @@ export const Navbar = () => {
           md:py-0
           px-4
           text-lg text-gray-700
-          bg-red-200
+          bg-white
           fixed
           z-40
          
         "
       >
         <div>
-          <a href="#">MYSite</a>
+          <a href="#">YV-Thumbnail</a>
         </div>
 
         <svg

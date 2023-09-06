@@ -10,7 +10,7 @@ export const HeroThree = ({ handelVideoUrlChange }) => {
             Youtube Video Thumbnail
           </h1>
           <p class="text-gray-300">
-            For Any One who want to Get youtube thumbnail, From Creaters.
+            For Any One who want to Get youTube thumbnail, From Creaters.
           </p>
 
           <div class="relative p-3 border border-gray-200 rounded-lg w-full max-w-lg">

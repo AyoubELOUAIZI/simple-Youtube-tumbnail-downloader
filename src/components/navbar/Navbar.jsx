@@ -23,9 +23,9 @@ export const Navbar = () => {
           items-center
           justify-between
           w-full
-          py-4
+          py-8
           md:py-0
-          px-4
+          px-8
           text-lg text-gray-700
           bg-white
           fixed
@@ -37,7 +37,7 @@ export const Navbar = () => {
           <a href="#">YV-Thumbnail</a>
         </div>
 
-        <svg
+        {/* <svg
           onClick={toggleMenu}
           xmlns="http://www.w3.org/2000/svg"
           id="menu-button"
@@ -70,17 +70,12 @@ export const Navbar = () => {
           >
             <li>
               <a class="md:p-4 py-2 block hover:text-purple-400" href="#">
-                Features
+                Home
               </a>
             </li>
             <li>
               <a class="md:p-4 py-2 block hover:text-purple-400" href="#">
-                Pricing
-              </a>
-            </li>
-            <li>
-              <a class="md:p-4 py-2 block hover:text-purple-400" href="#">
-                Customers
+                AboutUS
               </a>
             </li>
             <li>
@@ -89,7 +84,7 @@ export const Navbar = () => {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
       </nav>
     </header>
   );

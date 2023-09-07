@@ -1,7 +1,11 @@
 import React from "react";
 
 export const HeroTow = ({ imageId }) => {
-  const downloadThumbnailImage = () => {
+  const OpenThumbnailImage = () => {
+    if (!imageId) {
+      // there is no image
+      return;
+    }
     const url = `https://img.youtube.com/vi/${imageId}/sddefault.jpg`;
 
     // Create a hidden anchor element
@@ -20,6 +24,29 @@ export const HeroTow = ({ imageId }) => {
 
     // Clean up by removing the anchor element
     document.body.removeChild(a);
+  };
+
+  const downloadThumbnailImage = () => {
+    if (!imageId) {
+      // there is no image
+      return;
+    }
+    console.log("starting download of thumbnail");
+    // the download implementation
+
+    const image = document.getElementById("captured-image");
+    const canvas = document.createElement("canvas");
+    canvas.width = image.width;
+    canvas.height = image.height;
+    const ctx = canvas.getContext("2d");
+    ctx.drawImage(image, 0, 0, image.width, image.height);
+
+    // Convert the canvas to a data URL and trigger the download
+    const dataURL = canvas.toDataURL("image/jpg");
+    const link = document.createElement("a");
+    link.href = dataURL;
+    link.download = "captured-image.jpg";
+    link.click();
   };
 
   return (
@@ -42,13 +69,16 @@ export const HeroTow = ({ imageId }) => {
             </p>
             <div class="flex justify-center">
               <button
-                onClick={downloadThumbnailImage}
+                onClick={OpenThumbnailImage}
                 class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
               >
-                Open The Thumbnail Image
+                Open Thumbnail
               </button>
-              {/* <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                Button
+              {/* <button
+                onClick={downloadThumbnailImage}
+                class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
+              >
+                Download
               </button> */}
             </div>
           </div>

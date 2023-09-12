@@ -17,16 +17,18 @@ export default function RootLayout({ children }) {
     <html lang="en">
           <GoogleAnalytics GA_TRACKING_ID='G-QKJ264BEE0'/>
 
-       {/* <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QKJ264BEE0"></script>
+       <head>
+  {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-QKJ264BEE0"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments)}
     gtag('js', new Date());
 
     gtag('config', 'G-QKJ264BEE0');
-  </script>    
-  </head> */}
+  </script>     */}
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5404143094558564"
+     crossorigin="anonymous"></script>
+  </head>
       <body className={inter.className}>
         <Navbar/>
         {children}

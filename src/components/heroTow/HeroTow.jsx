@@ -93,8 +93,8 @@ export const HeroTow = ({ imageId }) => {
                   ? `https://img.youtube.com/vi/${imageId}/sddefault.jpg`
                   : youtubebackground
               }
-              width={400} // Set your desired width here
-              height={300} // Set your desired height here
+              width="auto" // Set your desired width here
+              height="auto" // Set your desired height here
               // https://ergonotes.com/wp-content/uploads/2022/11/Find-YouTube-Thumbnail-Source.jpg
             />
           </div>

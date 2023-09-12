@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'YouTube Video Thumbnail',
   description: 'YouTube Video Thumbnail Downloader | Instant Preview & Download.Easily preview and download YouTube video thumbnails with our user-friendly tool.',
+  icons: {
+    icon: '/logotb.png',
+  },
 }
 
 export default function RootLayout({ children }) {

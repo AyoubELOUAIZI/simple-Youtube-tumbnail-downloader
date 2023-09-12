@@ -34,7 +34,7 @@ export const Navbar = () => {
         "
       >
         <div>
-          <a href="#">YV-Thumbnail</a>
+          <a href="#">YT-Thumbnail</a>
         </div>
 
         {/* <svg

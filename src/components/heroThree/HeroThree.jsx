@@ -4,7 +4,7 @@ export const HeroThree = ({ handelVideoUrlChange }) => {
 
   return (
     <div>
-      <div class="relative h-[370px] bg-gradient-to-tr from-indigo-600 via-indigo-700 to-violet-800">
+      <div class="relative h-[410px] bg-gradient-to-tr from-indigo-600 via-indigo-700 to-violet-800">
         <div class="flex flex-col gap-4 justify-center items-center w-full h-full px-3 md:px-0">
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
             Youtube Video Thumbnail

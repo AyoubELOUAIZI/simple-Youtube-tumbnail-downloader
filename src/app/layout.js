@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-          <GoogleAnalytics GA_MEASUREMENT_ID='G-QKJ264BEE0'/>
+          <GoogleAnalytics GA_TRACKING_ID='G-QKJ264BEE0'/>
 
        {/* <head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QKJ264BEE0"></script>

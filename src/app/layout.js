@@ -2,6 +2,8 @@ import { Navbar } from '@/components/navbar/Navbar'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { Footer } from '@/components/footer/Footer'
+import GoogleAnalytics from '@/components/GoogleAnalytics';
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,17 +15,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-       <head>
-       {/* <!-- Google tag (gtag.js) --> */}
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QKJ264BEE0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
+          <GoogleAnalytics GA_MEASUREMENT_ID='G-QKJ264BEE0'/>
 
-  gtag('config', 'G-QKJ264BEE0');
-</script>    
-  </head>
+       {/* <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QKJ264BEE0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QKJ264BEE0');
+  </script>    
+  </head> */}
       <body className={inter.className}>
         <Navbar/>
         {children}

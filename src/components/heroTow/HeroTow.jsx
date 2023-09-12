@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export const HeroTow = ({ imageId }) => {
@@ -60,12 +61,12 @@ export const HeroTow = ({ imageId }) => {
               YouTube Video Thumbnail!
             </h1>
             <p class="mb-8 leading-relaxed">
-              Once you've pasted the YouTube video URL in the input field above,
-              you'll have the opportunity to preview the thumbnail image. If the
-              URL is correct, you can easily download the image with a
-              right-click or simply click the button to open the image in a new
-              tab. This seamless process ensures a convenient experience for
-              users looking to access YouTube video thumbnails effortlessly.
+              Once you&apos;ve pasted the YouTube video URL in the input field
+              above, you&apos;ll have the opportunity to preview the thumbnail
+              image. If the URL is correct, you can easily download the image
+              with a right-click or simply click the button to open the image in
+              a new tab. This seamless process ensures a convenient experience
+              for users looking to access YouTube video thumbnails effortlessly.
             </p>
             <div class="flex justify-center">
               <button
@@ -83,7 +84,7 @@ export const HeroTow = ({ imageId }) => {
             </div>
           </div>
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img
+            <Image
               class="object-cover object-center rounded"
               alt="thumbnail"
               src={
@@ -91,6 +92,8 @@ export const HeroTow = ({ imageId }) => {
                   ? `https://img.youtube.com/vi/${imageId}/sddefault.jpg`
                   : "https://ergonotes.com/wp-content/uploads/2022/11/Find-YouTube-Thumbnail-Source.jpg"
               }
+              width={400} // Set your desired width here
+              height={300} // Set your desired height here
             />
           </div>
         </div>

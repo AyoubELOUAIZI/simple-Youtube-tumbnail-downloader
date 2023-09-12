@@ -10,10 +10,11 @@ export const HeroFour = () => {
             <span class="block pt-2"> Thumbnails</span>
           </h1>
           <p class="max-w-md mx-auto mt-3 text-base text-gray-300 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-            Video thumbnails on YouTube are vital. They're the first impression
-            viewers get, influencing click-through rates and engagement. A
-            well-designed thumbnail can make your content stand out, driving
-            more views and connecting with your audience effectively.
+            Video thumbnails on YouTube are vital. They&apos;re the first
+            impression viewers get, influencing click-through rates and
+            engagement. A well-designed thumbnail can make your content stand
+            out, driving more views and connecting with your audience
+            effectively.
           </p>
           <div class="max-w-md mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
             <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">

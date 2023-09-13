@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -65,12 +66,9 @@ export const Footer = () => {
 
       <div className="w-full bg-neutral-300 p-4 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
         © 2023 Copyright:
-        <a
-          className="dark:text-neutral-400"
-          href="https://tailwind-elements.com/"
-        >
-          YV-Thumbnail
-        </a>
+        <Link className="dark:text-neutral-400" href="/">
+          YT-Thumbnail
+        </Link>
       </div>
     </footer>
   );

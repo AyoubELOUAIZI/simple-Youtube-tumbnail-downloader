@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 
 export const Navbar = () => {
   // const button = document.querySelector('#menu-button');
@@ -34,10 +35,10 @@ export const Navbar = () => {
         "
       >
         <div>
-          <a href="#">YT-Thumbnail</a>
+          <Link href="/">YT-Thumbnail</Link>
         </div>
 
-        {/* <svg
+        <svg
           onClick={toggleMenu}
           xmlns="http://www.w3.org/2000/svg"
           id="menu-button"
@@ -69,22 +70,31 @@ export const Navbar = () => {
               md:pt-0"
           >
             <li>
-              <a className="md:p-4 py-2 block hover:text-purple-400" href="#">
+              <Link
+                className="md:p-4 py-2 block hover:text-purple-400"
+                href="/"
+              >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="md:p-4 py-2 block hover:text-purple-400" href="#">
-                AboutUS
-              </a>
+              <Link
+                className="md:p-4 py-2 block hover:text-purple-400"
+                href="/youtube-thumbnails"
+              >
+                Youtube Thumbnails
+              </Link>
             </li>
             <li>
-              <a className="md:p-4 py-2 block hover:text-purple-400" href="#">
-                Blog
-              </a>
+              <Link
+                className="md:p-4 py-2 block hover:text-purple-400"
+                href="/privacy-policy"
+              >
+                Privacy Policy
+              </Link>
             </li>
           </ul>
-        </div> */}
+        </div>
       </nav>
     </header>
   );

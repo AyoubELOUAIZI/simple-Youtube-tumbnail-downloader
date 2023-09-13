@@ -7,6 +7,8 @@ export default function YoutubeThumbnails() {
     <div className="">
       <main className="p-4">
         <NiceHero />
+        <br />
+        <br />
         <SimpleHero />
       </main>
     </div>

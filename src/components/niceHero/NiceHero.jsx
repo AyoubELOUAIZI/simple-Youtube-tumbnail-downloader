@@ -42,7 +42,7 @@ export const NiceHero = () => {
                 href="/"
                 class="inline-block w-full text-center text-lg font-medium text-gray-100 bg-blue-600 border-solid border-2 border-gray-600 py-4 px-10 hover:bg-green-800 hover:shadow-md md:w-48"
               >
-                YT-Thumbnail
+                Home
               </Link>
             </div>
           </div>

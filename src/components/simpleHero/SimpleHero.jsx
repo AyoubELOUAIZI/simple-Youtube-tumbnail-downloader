@@ -15,21 +15,21 @@ export const SimpleHero = () => {
             </h1>
             <p class="mb-8 leading-relaxed">
               In the vast digital landscape of YouTube, where millions of videos
-              compete for viewers' attention, the role of the video thumbnail
-              cannot be overstated. A compelling YouTube video thumbnail is akin
-              to the cover of a book, providing a sneak peek into the content
-              within. It is the initial impression that potential viewers see,
-              making it a critical factor in whether they decide to click and
-              watch your video or scroll past it. A well-crafted thumbnail has
-              the power to captivate, intrigue, and convey the essence of your
-              video's message. It can entice viewers with vibrant visuals,
-              convey the video's topic, and even evoke emotions, ultimately
-              influencing the click-through rate and, subsequently, the success
-              of your content. In an era where attention spans are shorter than
-              ever, the YouTube video thumbnail serves as your digital
-              storefront, beckoning users to explore the world you've created in
-              your video. It's not just an image; it's the gateway to your
-              content's success.
+              compete for viewers&lsquo; attention, the role of the video
+              thumbnail cannot be overstated. A compelling YouTube video
+              thumbnail is akin to the cover of a book, providing a sneak peek
+              into the content within. It is the initial impression that
+              potential viewers see, making it a critical factor in whether they
+              decide to click and watch your video or scroll past it. A
+              well-crafted thumbnail has the power to captivate, intrigue, and
+              convey the essence of your video&lsquo;s message. It can entice
+              viewers with vibrant visuals, convey the video&lsquo;s topic, and
+              even evoke emotions, ultimately influencing the click-through rate
+              and, subsequently, the success of your content. In an era where
+              attention spans are shorter than ever, the YouTube video thumbnail
+              serves as your digital storefront, beckoning users to explore the
+              world you&lsquo;ve created in your video. It&lsquo;s not just an
+              image; it&lsquo;s the gateway to your content&lsquo;s success.
             </p>
             <div class="flex justify-center">
               <Link

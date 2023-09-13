@@ -25,16 +25,16 @@ export const NiceHero = () => {
               A YouTube video thumbnail is a small, static image that represents
               a video and is displayed as a preview or teaser before viewers
               click to watch the video. Thumbnails are a crucial element in
-              attracting viewers' attention and encouraging them to click on a
-              video. They typically feature a visually appealing image or
-              graphic related to the video's content, along with text or
+              attracting viewers&lsquo; attention and encouraging them to click
+              on a video. They typically feature a visually appealing image or
+              graphic related to the video&lsquo;s content, along with text or
               captions, which can provide context or entice viewers to learn
               more about the video. Thumbnails serve as a visual summary of the
-              video's content and play a significant role in helping users
+              video&lsquo;s content and play a significant role in helping users
               decide whether or not to click on and watch a particular video on
               the YouTube platform. Effective thumbnails are often designed to
               be eye-catching, informative, and compelling to increase the
-              video's click-through rate and overall visibility.
+              video&lsquo;s click-through rate and overall visibility.
             </p>
 
             <div class="mt-8">

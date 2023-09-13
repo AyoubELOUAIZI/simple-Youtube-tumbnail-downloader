@@ -10,15 +10,15 @@ export default function PrivacyPolicy() {
       <main className="p-4">
         <section className="mb-6">
           <h2 className="text-xl font-semibold">
-            Privacy Policy for our site:{" "}
+            Privacy Policy for our site:
             <span style={{ color: "blue" }}>
-              youtube-thumbnail-nu.vercel.app{" "}
+              youtube-thumbnail-nu.vercel.app
             </span>
           </h2>
 
           <h2 className="text-xl font-semibold">Last Updated: [13/09/2023]</h2>
           <p className="mt-2">
-            Welcome to [Your Website Name]! We respect your privacy and are
+            Welcome to <em>YT-Thumbnail</em>! We respect your privacy and are
             committed to protecting any information you may share with us. This
             Privacy Policy explains how we handle user data on our website.
           </p>
@@ -85,9 +85,9 @@ export default function PrivacyPolicy() {
           </h2>
           <p className="mt-2">
             This Privacy Policy may be updated from time to time. Any changes
-            will be reflected on this page with a new "Last Updated" date. We
-            recommend reviewing this policy periodically to stay informed about
-            how we are protecting your privacy.
+            will be reflected on this page with a new &quot;Last Updated&quot;
+            date. We recommend reviewing this policy periodically to stay
+            informed about how we are protecting your privacy.
           </p>
         </section>
         <section className="mb-6">
@@ -98,8 +98,6 @@ export default function PrivacyPolicy() {
             <em> amalmama249@gmail.com</em>.
           </p>
         </section>
-
-        {/* Add more sections as needed */}
       </main>
     </div>
   );
